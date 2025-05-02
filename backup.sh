@@ -45,3 +45,16 @@ fi
 create_backup
 perform_rotation
 
+<< croncomment
+
+	To Automate this script type "$ crontab -e" 
+	--> It will open a prompt asking you to enter the ( 1-4 ) to choose the editor [choose 2 for vim]
+	--> Once you choose one Editor will open
+	--> Go to Last line and write the command there
+	--> Command will be: * * * * * [ This will run the script each minute] <script_path> <source_dir> <dest_dir>
+	--> Save and Exit ['Esc' + ':' + 'w' + 'q' ]
+	--> Thats it your script will run each minute
+
+Note: For setting the time for the script you can visit 'https://crontab.guru/' website
+
+croncomment
